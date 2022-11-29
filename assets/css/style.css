@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 }
-html,body{
+html,body{ /* scrol down smoothly */
     scroll-behavior: smooth;
 }
 
@@ -214,7 +214,7 @@ p {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px){ /* edited the media margins */
     .content{
         width: 100%;
     }
