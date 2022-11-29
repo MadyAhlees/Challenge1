@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+html,body{
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: #d9dcd6;
@@ -24,7 +27,7 @@ body {
     color: #d9dcd6;
 }
 
-.header div {
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,11 +35,11 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+.header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -197,4 +200,28 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+@media (max-width: 1100px){
+    .header h1{
+        font-size: 35px;
+    }
+    .header nav ul li{
+        margin-left: 10px;
+    }
+    .header nav ul li a{
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 768px){
+    .content{
+        width: 100%;
+    }
+    .benefits{
+        width: 50%;
+    }
+    .footer{
+        display: none;
+    }
 }
